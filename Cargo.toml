@@ -4,7 +4,7 @@ description = "Peripheral access API for LPC177x and LPC178x microcontrollers"
 keywords = ["no-std", "arm", "cortex-m", "lpc17xx"]
 license = "MIT OR Apache-2.0"
 name = "lpc177x_8x"
-repository = "https://github.com/thenewwazoo/lpc177x-8x"
+repository = "https://github.com/thenewwazoo/lpc177x_8x"
 version = "0.1.1"
 readme = "README.md"
 
