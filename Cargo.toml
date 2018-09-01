@@ -1,14 +1,14 @@
 [package]
 authors = ["Brandon Matthews <bmatt@optimaltour.us>"]
-description = "Peripheral access API for LPC177x and LPC178x microcontrollers (svd2rust 0.12.0)"
+description = "Peripheral access API for LPC177x and LPC178x microcontrollers (svd2rust 0.13.1)"
 keywords = ["no-std", "arm", "cortex-m", "lpc17xx"]
 license = "MIT OR Apache-2.0"
 name = "lpc177x_8x"
-repository = "https://github.com/thenewwazoo/lpc177x_8x"
-version = "0.12.0"
 readme = "README.md"
+repository = "https://github.com/thenewwazoo/lpc177x_8x"
+version = "0.13.1"
 
 [dependencies]
-bare-metal = "0.1"
-cortex-m = "0.4"
-vcell = "0.1"
+bare-metal = "0.2.3"
+cortex-m = "0.5.6"
+vcell = "0.1.0"
