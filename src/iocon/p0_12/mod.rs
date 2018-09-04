@@ -298,15 +298,15 @@ impl ADMODER {
         *self == ADMODER::DIGITAL_FUNCTIONAL_M
     }
 }
-#[doc = "Possible values of the field `FILTR`"]
+#[doc = "Possible values of the field `FILTER`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum FILTRR {
+pub enum FILTERR {
     #[doc = "Filter disabled."]
     FILTER_DISABLED,
     #[doc = "Filter enabled."]
     FILTER_ENABLED,
 }
-impl FILTRR {
+impl FILTERR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -321,28 +321,28 @@ impl FILTRR {
     #[inline]
     pub fn bit(&self) -> bool {
         match *self {
-            FILTRR::FILTER_DISABLED => false,
-            FILTRR::FILTER_ENABLED => true,
+            FILTERR::FILTER_DISABLED => false,
+            FILTERR::FILTER_ENABLED => true,
         }
     }
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
-    pub fn _from(value: bool) -> FILTRR {
+    pub fn _from(value: bool) -> FILTERR {
         match value {
-            false => FILTRR::FILTER_DISABLED,
-            true => FILTRR::FILTER_ENABLED,
+            false => FILTERR::FILTER_DISABLED,
+            true => FILTERR::FILTER_ENABLED,
         }
     }
     #[doc = "Checks if the value of the field is `FILTER_DISABLED`"]
     #[inline]
     pub fn is_filter_disabled(&self) -> bool {
-        *self == FILTRR::FILTER_DISABLED
+        *self == FILTERR::FILTER_DISABLED
     }
     #[doc = "Checks if the value of the field is `FILTER_ENABLED`"]
     #[inline]
     pub fn is_filter_enabled(&self) -> bool {
-        *self == FILTRR::FILTER_ENABLED
+        *self == FILTERR::FILTER_ENABLED
     }
 }
 #[doc = "Possible values of the field `OD`"]
@@ -696,32 +696,32 @@ impl<'a> _ADMODEW<'a> {
         self.w
     }
 }
-#[doc = "Values that can be written to the field `FILTR`"]
-pub enum FILTRW {
+#[doc = "Values that can be written to the field `FILTER`"]
+pub enum FILTERW {
     #[doc = "Filter disabled."]
     FILTER_DISABLED,
     #[doc = "Filter enabled."]
     FILTER_ENABLED,
 }
-impl FILTRW {
+impl FILTERW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
     pub fn _bits(&self) -> bool {
         match *self {
-            FILTRW::FILTER_DISABLED => false,
-            FILTRW::FILTER_ENABLED => true,
+            FILTERW::FILTER_DISABLED => false,
+            FILTERW::FILTER_ENABLED => true,
         }
     }
 }
 #[doc = r" Proxy"]
-pub struct _FILTRW<'a> {
+pub struct _FILTERW<'a> {
     w: &'a mut W,
 }
-impl<'a> _FILTRW<'a> {
+impl<'a> _FILTERW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
-    pub fn variant(self, variant: FILTRW) -> &'a mut W {
+    pub fn variant(self, variant: FILTERW) -> &'a mut W {
         {
             self.bit(variant._bits())
         }
@@ -729,12 +729,12 @@ impl<'a> _FILTRW<'a> {
     #[doc = "Filter disabled."]
     #[inline]
     pub fn filter_disabled(self) -> &'a mut W {
-        self.variant(FILTRW::FILTER_DISABLED)
+        self.variant(FILTERW::FILTER_DISABLED)
     }
     #[doc = "Filter enabled."]
     #[inline]
     pub fn filter_enabled(self) -> &'a mut W {
-        self.variant(FILTRW::FILTER_ENABLED)
+        self.variant(FILTERW::FILTER_ENABLED)
     }
     #[doc = r" Sets the field bit"]
     pub fn set_bit(self) -> &'a mut W {
@@ -865,8 +865,8 @@ impl R {
     }
     #[doc = "Bit 8 - Selects 10 ns input glitch filter."]
     #[inline]
-    pub fn filtr(&self) -> FILTRR {
-        FILTRR::_from({
+    pub fn filter(&self) -> FILTERR {
+        FILTERR::_from({
             const MASK: bool = true;
             const OFFSET: u8 = 8;
             ((self.bits >> OFFSET) & MASK as u32) != 0
@@ -921,8 +921,8 @@ impl W {
     }
     #[doc = "Bit 8 - Selects 10 ns input glitch filter."]
     #[inline]
-    pub fn filtr(&mut self) -> _FILTRW {
-        _FILTRW { w: self }
+    pub fn filter(&mut self) -> _FILTERW {
+        _FILTERW { w: self }
     }
     #[doc = "Bit 10 - Open-drain mode."]
     #[inline]

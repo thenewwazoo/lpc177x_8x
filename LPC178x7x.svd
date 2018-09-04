@@ -21544,7 +21544,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -21716,7 +21716,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -23287,7 +23287,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -23459,7 +23459,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -23631,7 +23631,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -23803,7 +23803,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -29251,7 +29251,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -29428,7 +29428,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>FILTR</name>
+                            <name>FILTER</name>
                             <description>Selects 10 ns input glitch filter.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
