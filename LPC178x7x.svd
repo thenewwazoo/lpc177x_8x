@@ -23005,7 +23005,7 @@
                 <register>
                     <name>P0_22</name>
                     <description>I/O configuration register for pin P0[22]</description>
-                    <addressOffset>0x30</addressOffset>
+                    <addressOffset>0x58</addressOffset>
                     <access>read-write</access>
                     <resetValue>0x000001B0</resetValue>
                     <resetMask>0xFFFFFFFF</resetMask>
