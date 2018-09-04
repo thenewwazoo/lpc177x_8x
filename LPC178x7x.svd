@@ -26790,7 +26790,26 @@
                         <field>
                             <name>RESERVED</name>
                             <description>Reserved.</description>
-                            <bitRange>[8:7]</bitRange>
+                            <bitRange>[7:7]</bitRange>
+                        </field>
+                        <field>
+                            <name>FILTER</name>
+                            <description>Glitch filter control</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Noise pulses below approximately 10 ns are filtered
+                                        out.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DISABLED</name>
+                                    <description>No input filtering is done.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
                         </field>
                         <field>
                             <name>SLEW</name>
@@ -27092,7 +27111,26 @@
                         <field>
                             <name>RESERVED</name>
                             <description>Reserved.</description>
-                            <bitRange>[8:7]</bitRange>
+                            <bitRange>[7:7]</bitRange>
+                        </field>
+                        <field>
+                            <name>FILTER</name>
+                            <description>Glitch filter control</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Noise pulses below approximately 10 ns are filtered
+                                        out.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DISABLED</name>
+                                    <description>No input filtering is done.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
                         </field>
                         <field>
                             <name>SLEW</name>
@@ -27243,7 +27281,26 @@
                         <field>
                             <name>RESERVED</name>
                             <description>Reserved.</description>
-                            <bitRange>[8:7]</bitRange>
+                            <bitRange>[7:7]</bitRange>
+                        </field>
+                        <field>
+                            <name>FILTER</name>
+                            <description>Glitch filter control</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Noise pulses below approximately 10 ns are filtered
+                                        out.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DISABLED</name>
+                                    <description>No input filtering is done.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
                         </field>
                         <field>
                             <name>SLEW</name>

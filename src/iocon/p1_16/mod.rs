@@ -242,6 +242,53 @@ impl INVR {
         *self == INVR::INPUT_INVERTED_HIGH
     }
 }
+#[doc = "Possible values of the field `FILTER`"]
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum FILTERR {
+    #[doc = "Noise pulses below approximately 10 ns are filtered\n                                        out."]
+    ENABLED,
+    #[doc = "No input filtering is done."]
+    DISABLED,
+}
+impl FILTERR {
+    #[doc = r" Returns `true` if the bit is clear (0)"]
+    #[inline]
+    pub fn bit_is_clear(&self) -> bool {
+        !self.bit()
+    }
+    #[doc = r" Returns `true` if the bit is set (1)"]
+    #[inline]
+    pub fn bit_is_set(&self) -> bool {
+        self.bit()
+    }
+    #[doc = r" Value of the field as raw bits"]
+    #[inline]
+    pub fn bit(&self) -> bool {
+        match *self {
+            FILTERR::ENABLED => false,
+            FILTERR::DISABLED => true,
+        }
+    }
+    #[allow(missing_docs)]
+    #[doc(hidden)]
+    #[inline]
+    pub fn _from(value: bool) -> FILTERR {
+        match value {
+            false => FILTERR::ENABLED,
+            true => FILTERR::DISABLED,
+        }
+    }
+    #[doc = "Checks if the value of the field is `ENABLED`"]
+    #[inline]
+    pub fn is_enabled(&self) -> bool {
+        *self == FILTERR::ENABLED
+    }
+    #[doc = "Checks if the value of the field is `DISABLED`"]
+    #[inline]
+    pub fn is_disabled(&self) -> bool {
+        *self == FILTERR::DISABLED
+    }
+}
 #[doc = "Possible values of the field `SLEW`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum SLEWR {
@@ -574,6 +621,64 @@ impl<'a> _INVW<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `FILTER`"]
+pub enum FILTERW {
+    #[doc = "Noise pulses below approximately 10 ns are filtered\n                                        out."]
+    ENABLED,
+    #[doc = "No input filtering is done."]
+    DISABLED,
+}
+impl FILTERW {
+    #[allow(missing_docs)]
+    #[doc(hidden)]
+    #[inline]
+    pub fn _bits(&self) -> bool {
+        match *self {
+            FILTERW::ENABLED => false,
+            FILTERW::DISABLED => true,
+        }
+    }
+}
+#[doc = r" Proxy"]
+pub struct _FILTERW<'a> {
+    w: &'a mut W,
+}
+impl<'a> _FILTERW<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: FILTERW) -> &'a mut W {
+        {
+            self.bit(variant._bits())
+        }
+    }
+    #[doc = "Noise pulses below approximately 10 ns are filtered out."]
+    #[inline]
+    pub fn enabled(self) -> &'a mut W {
+        self.variant(FILTERW::ENABLED)
+    }
+    #[doc = "No input filtering is done."]
+    #[inline]
+    pub fn disabled(self) -> &'a mut W {
+        self.variant(FILTERW::DISABLED)
+    }
+    #[doc = r" Sets the field bit"]
+    pub fn set_bit(self) -> &'a mut W {
+        self.bit(true)
+    }
+    #[doc = r" Clears the field bit"]
+    pub fn clear_bit(self) -> &'a mut W {
+        self.bit(false)
+    }
+    #[doc = r" Writes raw bits to the field"]
+    #[inline]
+    pub fn bit(self, value: bool) -> &'a mut W {
+        const MASK: bool = true;
+        const OFFSET: u8 = 8;
+        self.w.bits &= !((MASK as u32) << OFFSET);
+        self.w.bits |= ((value & MASK) as u32) << OFFSET;
+        self.w
+    }
+}
 #[doc = "Values that can be written to the field `SLEW`"]
 pub enum SLEWW {
     #[doc = "Standard mode, output slew rate control is enabled. More\n                                        outputs can be switched simultaneously."]
@@ -732,6 +837,15 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
+    #[doc = "Bit 8 - Glitch filter control"]
+    #[inline]
+    pub fn filter(&self) -> FILTERR {
+        FILTERR::_from({
+            const MASK: bool = true;
+            const OFFSET: u8 = 8;
+            ((self.bits >> OFFSET) & MASK as u32) != 0
+        })
+    }
     #[doc = "Bit 9 - Driver slew rate"]
     #[inline]
     pub fn slew(&self) -> SLEWR {
@@ -782,6 +896,11 @@ impl W {
     #[inline]
     pub fn inv(&mut self) -> _INVW {
         _INVW { w: self }
+    }
+    #[doc = "Bit 8 - Glitch filter control"]
+    #[inline]
+    pub fn filter(&mut self) -> _FILTERW {
+        _FILTERW { w: self }
     }
     #[doc = "Bit 9 - Driver slew rate"]
     #[inline]
