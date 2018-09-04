@@ -131,7 +131,7 @@ pub static __INTERRUPTS: [Vector; 41] = [
 #[cfg(feature = "rt")]
 #[macro_export]
 macro_rules! interrupt {
-    ($Name:ident, $handler:path,state: $State:ty = $initial_state:expr) => {
+    ( $ Name : ident , $ handler : path , state : $ State : ty = $ initial_state : expr ) => {
         #[allow(unsafe_code)]
         #[deny(private_no_mangle_fns)]
         #[no_mangle]
@@ -142,7 +142,7 @@ macro_rules! interrupt {
             f(&mut STATE)
         }
     };
-    ($Name:ident, $handler:path) => {
+    ( $ Name : ident , $ handler : path ) => {
         #[allow(unsafe_code)]
         #[deny(private_no_mangle_fns)]
         #[no_mangle]

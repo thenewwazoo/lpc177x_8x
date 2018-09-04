@@ -45,8 +45,7 @@ pub struct RegisterBlock {
     pub p0_20: P0_20,
     #[doc = "0x54 - I/O configuration register for pin P0[21]"]
     pub p0_21: P0_21,
-    #[doc = "0x58 - I/O configuration register for pin P0[22]"]
-    pub p0_22: P0_22,
+    _reserved0: [u8; 4usize],
     #[doc = "0x5c - I/O configuration register for pin P0[23]"]
     pub p0_23: P0_23,
     #[doc = "0x60 - I/O configuration register for pin P0[24]"]

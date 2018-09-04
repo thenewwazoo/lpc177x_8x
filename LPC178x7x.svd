@@ -21457,6 +21457,139 @@
                                 </enumeratedValue>
                             </enumeratedValues>
                         </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>ADMODE</name>
+                            <description>Selects Analog/Digital mode.</description>
+                            <bitRange>[7:7]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ANALOG_INPUT_MODE</name>
+                                    <description>Analog input mode.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DIGITAL_FUNCTIONAL_M</name>
+                                    <description>Digital functional mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>FILTR</name>
+                            <description>Selects 10 ns input glitch filter.</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>FILTER_DISABLED</name>
+                                    <description>Filter disabled.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FILTER_ENABLED</name>
+                                    <description>Filter enabled.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[9:9]</bitRange>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
+                        </field>
                     </fields>
                 </register>
                 <register>
@@ -21495,6 +21628,139 @@
                                     <value>0x3</value>
                                 </enumeratedValue>
                             </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>ADMODE</name>
+                            <description>Selects Analog/Digital mode.</description>
+                            <bitRange>[7:7]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ANALOG_INPUT_MODE</name>
+                                    <description>Analog input mode.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DIGITAL_FUNCTIONAL_M</name>
+                                    <description>Digital functional mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>FILTR</name>
+                            <description>Selects 10 ns input glitch filter.</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>FILTER_DISABLED</name>
+                                    <description>Filter disabled.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FILTER_ENABLED</name>
+                                    <description>Filter enabled.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[9:9]</bitRange>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
                         </field>
                     </fields>
                 </register>
@@ -22739,7 +23005,7 @@
                 <register>
                     <name>P0_22</name>
                     <description>I/O configuration register for pin P0[22]</description>
-                    <addressOffset>0x58</addressOffset>
+                    <addressOffset>0x30</addressOffset>
                     <access>read-write</access>
                     <resetValue>0x000001B0</resetValue>
                     <resetMask>0xFFFFFFFF</resetMask>
@@ -22775,6 +23041,162 @@
                                     <name>CAN_TD1</name>
                                     <description>CAN1 transmitter output.</description>
                                     <value>0x4</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[8:7]</bitRange>
+                        </field>
+                        <field>
+                            <name>SLEW</name>
+                            <description>Driver slew rate</description>
+                            <bitRange>[9:9]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>STANDARD</name>
+                                    <description>Standard mode, output slew rate control is enabled. More
+                                        outputs can be switched simultaneously.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FAST</name>
+                                    <description>Fast mode, slew rate control is disabled. Refer to the
+                                        appropriate specific device data sheet for details.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode. Input cannot be pulled up above VDD.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>P0_23</name>
+                    <description>I/O configuration register for pin P0[23]</description>
+                    <addressOffset>0x5C</addressOffset>
+                    <access>read-write</access>
+                    <resetValue>0x000001B0</resetValue>
+                    <resetMask>0xFFFFFFFF</resetMask>
+                    <fields>
+                        <field>
+                            <name>FUNC</name>
+                            <description>Selects pin function for pin P0[23]</description>
+                            <bitRange>[2:0]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>P0_23</name>
+                                    <description>General purpose digital input/output
+                                        pin.</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ADC0_IN_0</name>
+                                    <description>A/D converter 0, input 0. When configured as an                                             ADC input, the digital function of the pin must be                                             disabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>I2S_RX_SCK</name>
+                                    <description>Receive Clock. It is driven by the master and                                             received by the slave. Corresponds to the signal SCK in                                             the                                                 I2S-bus                                                 specification.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>T3_CAP0</name>
+                                    <description>Capture input for Timer 3, channel 0.</description>
+                                    <value>0x3</value>
                                 </enumeratedValue>
                             </enumeratedValues>
                         </field>
@@ -22914,45 +23336,6 @@
                     </fields>
                 </register>
                 <register>
-                    <name>P0_23</name>
-                    <description>I/O configuration register for pin P0[23]</description>
-                    <addressOffset>0x5C</addressOffset>
-                    <access>read-write</access>
-                    <resetValue>0x000001B0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>FUNC</name>
-                            <description>Selects pin function for pin P0[23]</description>
-                            <bitRange>[2:0]</bitRange>
-                            <enumeratedValues>
-                                <name>ENUM</name>
-                                <enumeratedValue>
-                                    <name>P0_23</name>
-                                    <description>General purpose digital input/output
-                                        pin.</description>
-                                    <value>0x0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>ADC0_IN_0</name>
-                                    <description>A/D converter 0, input 0. When configured as an                                             ADC input, the digital function of the pin must be                                             disabled.</description>
-                                    <value>0x1</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>I2S_RX_SCK</name>
-                                    <description>Receive Clock. It is driven by the master and                                             received by the slave. Corresponds to the signal SCK in                                             the                                                 I2S-bus                                                 specification.</description>
-                                    <value>0x2</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>T3_CAP0</name>
-                                    <description>Capture input for Timer 3, channel 0.</description>
-                                    <value>0x3</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                    </fields>
-                </register>
-                <register>
                     <name>P0_24</name>
                     <description>I/O configuration register for pin P0[24]</description>
                     <addressOffset>0x60</addressOffset>
@@ -22988,6 +23371,139 @@
                                     <value>0x3</value>
                                 </enumeratedValue>
                             </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>ADMODE</name>
+                            <description>Selects Analog/Digital mode.</description>
+                            <bitRange>[7:7]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ANALOG_INPUT_MODE</name>
+                                    <description>Analog input mode.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DIGITAL_FUNCTIONAL_M</name>
+                                    <description>Digital functional mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>FILTR</name>
+                            <description>Selects 10 ns input glitch filter.</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>FILTER_DISABLED</name>
+                                    <description>Filter disabled.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FILTER_ENABLED</name>
+                                    <description>Filter enabled.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[9:9]</bitRange>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
                         </field>
                     </fields>
                 </register>
@@ -23027,6 +23543,139 @@
                                     <value>0x3</value>
                                 </enumeratedValue>
                             </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>ADMODE</name>
+                            <description>Selects Analog/Digital mode.</description>
+                            <bitRange>[7:7]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ANALOG_INPUT_MODE</name>
+                                    <description>Analog input mode.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DIGITAL_FUNCTIONAL_M</name>
+                                    <description>Digital functional mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>FILTR</name>
+                            <description>Selects 10 ns input glitch filter.</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>FILTER_DISABLED</name>
+                                    <description>Filter disabled.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FILTER_ENABLED</name>
+                                    <description>Filter enabled.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[9:9]</bitRange>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
                         </field>
                     </fields>
                 </register>
@@ -28458,6 +29107,139 @@
                                 </enumeratedValue>
                             </enumeratedValues>
                         </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>ADMODE</name>
+                            <description>Selects Analog/Digital mode.</description>
+                            <bitRange>[7:7]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ANALOG_INPUT_MODE</name>
+                                    <description>Analog input mode.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DIGITAL_FUNCTIONAL_M</name>
+                                    <description>Digital functional mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>FILTR</name>
+                            <description>Selects 10 ns input glitch filter.</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>FILTER_DISABLED</name>
+                                    <description>Filter disabled.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FILTER_ENABLED</name>
+                                    <description>Filter enabled.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[9:9]</bitRange>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
+                        </field>
                     </fields>
                 </register>
                 <register>
@@ -28501,6 +29283,139 @@
                                     <value>0x4</value>
                                 </enumeratedValue>
                             </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>MODE</name>
+                            <description>Selects function mode (on-chip pull-up/pull-down resistor
+                                control).</description>
+                            <bitRange>[4:3]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INACTIVE</name>
+                                    <description>Inactive (no pull-down/pull-up resistor
+                                        enabled).</description>
+                                    <value>0x0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLDOWN_EN</name>
+                                    <description>Pull-down resistor enabled.</description>
+                                    <value>0x1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>PULLUP_EN</name>
+                                    <description>Pull-up resistor enabled.</description>
+                                    <value>0x2</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>REPEATER_MODE</name>
+                                    <description>Repeater mode.</description>
+                                    <value>0x3</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>HYS</name>
+                            <description>Hysteresis.</description>
+                            <bitRange>[5:5]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLE</name>
+                                    <description>Enable.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>INV</name>
+                            <description>Invert input</description>
+                            <bitRange>[6:6]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>INPUT_NOT_INVERTED</name>
+                                    <description>Input not inverted (HIGH on pin reads as 1, LOW on pin
+                                        reads as 0).</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>INPUT_INVERTED_HIGH</name>
+                                    <description>Input inverted (HIGH on pin reads as 0, LOW on pin reads as
+                                        1).</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>ADMODE</name>
+                            <description>Selects Analog/Digital mode.</description>
+                            <bitRange>[7:7]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>ANALOG_INPUT_MODE</name>
+                                    <description>Analog input mode.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DIGITAL_FUNCTIONAL_M</name>
+                                    <description>Digital functional mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>FILTR</name>
+                            <description>Selects 10 ns input glitch filter.</description>
+                            <bitRange>[8:8]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>FILTER_DISABLED</name>
+                                    <description>Filter disabled.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FILTER_ENABLED</name>
+                                    <description>Filter enabled.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[9:9]</bitRange>
+                        </field>
+                        <field>
+                            <name>OD</name>
+                            <description>Open-drain mode.</description>
+                            <bitRange>[10:10]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>DISABLE</name>
+                                    <description>Disable.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>ENABLED</name>
+                                    <description>Open-drain mode enabled. This is not a true open-drain
+                                        mode.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                        <field>
+                            <name>RESERVED</name>
+                            <description>Reserved.</description>
+                            <bitRange>[31:11]</bitRange>
                         </field>
                     </fields>
                 </register>
@@ -31052,45 +31967,29 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>ADMODE</name>
-                            <description>Selects Analog/Digital mode.</description>
-                            <bitRange>[7:7]</bitRange>
-                            <enumeratedValues>
-                                <name>ENUM</name>
-                                <enumeratedValue>
-                                    <name>ANALOG_INPUT_MODE</name>
-                                    <description>Analog input mode.</description>
-                                    <value>0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>DIGITAL_FUNCTIONAL_M</name>
-                                    <description>Digital functional mode.</description>
-                                    <value>1</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
-                            <name>FILTR</name>
-                            <description>Selects 10 ns input glitch filter.</description>
-                            <bitRange>[8:8]</bitRange>
-                            <enumeratedValues>
-                                <name>ENUM</name>
-                                <enumeratedValue>
-                                    <name>FILTER_DISABLED</name>
-                                    <description>Filter disabled.</description>
-                                    <value>0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>FILTER_ENABLED</name>
-                                    <description>Filter enabled.</description>
-                                    <value>1</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
                             <name>RESERVED</name>
                             <description>Reserved.</description>
+                            <bitRange>[8:7]</bitRange>
+                        </field>
+                        <field>
+                            <name>SLEW</name>
+                            <description>Driver slew rate</description>
                             <bitRange>[9:9]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>STANDARD</name>
+                                    <description>Standard mode, output slew rate control is enabled. More
+                                        outputs can be switched simultaneously.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FAST</name>
+                                    <description>Fast mode, slew rate control is disabled. Refer to the
+                                        appropriate specific device data sheet for details.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
                         </field>
                         <field>
                             <name>OD</name>
@@ -31106,7 +32005,7 @@
                                 <enumeratedValue>
                                     <name>ENABLED</name>
                                     <description>Open-drain mode enabled. This is not a true open-drain
-                                        mode.</description>
+                                        mode. Input cannot be pulled up above VDD.</description>
                                     <value>1</value>
                                 </enumeratedValue>
                             </enumeratedValues>
@@ -31214,45 +32113,29 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>ADMODE</name>
-                            <description>Selects Analog/Digital mode.</description>
-                            <bitRange>[7:7]</bitRange>
-                            <enumeratedValues>
-                                <name>ENUM</name>
-                                <enumeratedValue>
-                                    <name>ANALOG_INPUT_MODE</name>
-                                    <description>Analog input mode.</description>
-                                    <value>0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>DIGITAL_FUNCTIONAL_M</name>
-                                    <description>Digital functional mode.</description>
-                                    <value>1</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
-                            <name>FILTR</name>
-                            <description>Selects 10 ns input glitch filter.</description>
-                            <bitRange>[8:8]</bitRange>
-                            <enumeratedValues>
-                                <name>ENUM</name>
-                                <enumeratedValue>
-                                    <name>FILTER_DISABLED</name>
-                                    <description>Filter disabled.</description>
-                                    <value>0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>FILTER_ENABLED</name>
-                                    <description>Filter enabled.</description>
-                                    <value>1</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
                             <name>RESERVED</name>
                             <description>Reserved.</description>
+                            <bitRange>[8:7]</bitRange>
+                        </field>
+                        <field>
+                            <name>SLEW</name>
+                            <description>Driver slew rate</description>
                             <bitRange>[9:9]</bitRange>
+                            <enumeratedValues>
+                                <name>ENUM</name>
+                                <enumeratedValue>
+                                    <name>STANDARD</name>
+                                    <description>Standard mode, output slew rate control is enabled. More
+                                        outputs can be switched simultaneously.</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>FAST</name>
+                                    <description>Fast mode, slew rate control is disabled. Refer to the
+                                        appropriate specific device data sheet for details.</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
                         </field>
                         <field>
                             <name>OD</name>
@@ -31268,7 +32151,7 @@
                                 <enumeratedValue>
                                     <name>ENABLED</name>
                                     <description>Open-drain mode enabled. This is not a true open-drain
-                                        mode.</description>
+                                        mode. Input cannot be pulled up above VDD.</description>
                                     <value>1</value>
                                 </enumeratedValue>
                             </enumeratedValues>
