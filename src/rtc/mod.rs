@@ -3,7 +3,7 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - Interrupt Location Register"]
     pub ilr: ILR,
-    _reserved0: [u8; 4usize],
+    _reserved1: [u8; 4usize],
     #[doc = "0x08 - Clock Control Register"]
     pub ccr: CCR,
     #[doc = "0x0c - Counter Increment Interrupt Register"]
@@ -62,10 +62,10 @@ pub struct RegisterBlock {
     pub ercontrol: ERCONTROL,
     #[doc = "0x88 - Event Monitor/Recorder Counters register. Allows reading the counters associated with the event channels."]
     pub ercounters: ERCOUNTERS,
-    _reserved1: [u8; 4usize],
+    _reserved30: [u8; 4usize],
     #[doc = "0x90 - Event Monitor/Recorder First Stamp register for channel 0. Retains the time stamp for the first event on channel 0."]
     pub erfirststamp: [ERFIRSTSTAMP; 3],
-    _reserved2: [u8; 4usize],
+    _reserved31: [u8; 4usize],
     #[doc = "0xa0 - Event Monitor/Recorder Last Stamp register for channel 0. Retains the time stamp for the last (i.e. most recent) event on channel 0."]
     pub erlaststamp: [ERLASTSTAMP; 3],
 }

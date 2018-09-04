@@ -27,10 +27,10 @@ pub struct RegisterBlock {
     pub upcurr: UPCURR,
     #[doc = "0x30 - Lower Panel Current Address Value register"]
     pub lpcurr: LPCURR,
-    _reserved0: [u8; 460usize],
+    _reserved13: [u8; 460usize],
     #[doc = "0x200 - 256x16-bit Color Palette registers"]
     pub pal: [PAL; 128],
-    _reserved1: [u8; 1024usize],
+    _reserved14: [u8; 1024usize],
     #[doc = "0x800 - Cursor Image registers"]
     pub crsr_img: [CRSR_IMG; 256],
     #[doc = "0xc00 - Cursor Control register"]
@@ -45,7 +45,7 @@ pub struct RegisterBlock {
     pub crsr_xy: CRSR_XY,
     #[doc = "0xc14 - Cursor Clip Position register"]
     pub crsr_clip: CRSR_CLIP,
-    _reserved2: [u8; 8usize],
+    _reserved21: [u8; 8usize],
     #[doc = "0xc20 - Cursor Interrupt Mask register"]
     pub crsr_intmsk: CRSR_INTMSK,
     #[doc = "0xc24 - Cursor Interrupt Clear register"]

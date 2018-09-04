@@ -5,6 +5,14 @@ pub struct RegisterBlock {
     pub mode: MODE,
     #[doc = "0x04 - CRC seed register"]
     pub seed: SEED,
+    #[doc = "CRC data register CRC checksum register"]
+    pub sum: SumUnion,
+}
+#[doc = "CRC data register CRC checksum register"]
+#[repr(C)]
+pub union SumUnion {
+    #[doc = "0x08 - CRC data register"]
+    pub data: DATA,
     #[doc = "0x08 - CRC checksum register"]
     pub sum: SUM,
 }

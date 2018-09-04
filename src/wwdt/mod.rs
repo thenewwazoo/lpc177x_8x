@@ -9,7 +9,7 @@ pub struct RegisterBlock {
     pub feed: FEED,
     #[doc = "0x0c - Watchdog timer value register. This register reads out the current value of the Watchdog timer."]
     pub tv: TV,
-    _reserved0: [u8; 4usize],
+    _reserved4: [u8; 4usize],
     #[doc = "0x14 - Watchdog Warning Interrupt compare value."]
     pub warnint: WARNINT,
     #[doc = "0x18 - Watchdog Window compare value."]

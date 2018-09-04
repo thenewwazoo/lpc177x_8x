@@ -43,7 +43,7 @@ pub struct RegisterBlock {
     pub inxcmp1: INXCMP1,
     #[doc = "0x50 - Index compare register 2"]
     pub inxcmp2: INXCMP2,
-    _reserved0: [u8; 3972usize],
+    _reserved21: [u8; 3972usize],
     #[doc = "0xfd8 - Interrupt enable clear register"]
     pub iec: IEC,
     #[doc = "0xfdc - Interrupt enable set register"]

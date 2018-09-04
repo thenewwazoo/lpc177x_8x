@@ -27,10 +27,10 @@ pub struct RegisterBlock {
     pub clear: CLEAR,
     #[doc = "0x3c - Interrupt 0 mask register."]
     pub mask0: MASK0,
-    _reserved0: [u8; 8usize],
+    _reserved13: [u8; 8usize],
     #[doc = "0x48 - FIFO Counter."]
     pub fifocnt: FIFOCNT,
-    _reserved1: [u8; 52usize],
+    _reserved14: [u8; 52usize],
     #[doc = "0x80 - Data FIFO Register."]
     pub fifo: [FIFO; 16],
 }

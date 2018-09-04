@@ -1,7 +1,6 @@
 #[doc = r" Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    _reserved0: [u8; 220usize],
     #[doc = "0xdc - USB Receive Packet Length"]
     pub rxplen: RXPLEN,
     _reserved1: [u8; 32usize],
@@ -17,7 +16,7 @@ pub struct RegisterBlock {
     pub stctrl: STCTRL,
     #[doc = "0x114 - OTG Timer"]
     pub tmr: TMR,
-    _reserved2: [u8; 232usize],
+    _reserved7: [u8; 232usize],
     #[doc = "0x200 - USB Device Interrupt Status"]
     pub devintst: DEVINTST,
     #[doc = "0x204 - USB Device Interrupt Enable"]
@@ -34,7 +33,7 @@ pub struct RegisterBlock {
     pub rxdata: RXDATA,
     #[doc = "0x21c - USB Transmit Data"]
     pub txdata: TXDATA,
-    _reserved3: [u8; 4usize],
+    _reserved15: [u8; 4usize],
     #[doc = "0x224 - USB Transmit Packet Length"]
     pub txplen: TXPLEN,
     #[doc = "0x228 - USB Control"]
@@ -63,7 +62,7 @@ pub struct RegisterBlock {
     pub dmarclr: DMARCLR,
     #[doc = "0x258 - USB DMA Request Set"]
     pub dmarset: DMARSET,
-    _reserved4: [u8; 36usize],
+    _reserved29: [u8; 36usize],
     #[doc = "0x280 - USB UDCA Head"]
     pub udcah: UDCAH,
     #[doc = "0x284 - USB Endpoint DMA Status"]
@@ -76,7 +75,7 @@ pub struct RegisterBlock {
     pub dmaintst: DMAINTST,
     #[doc = "0x294 - USB DMA Interrupt Enable"]
     pub dmainten: DMAINTEN,
-    _reserved5: [u8; 8usize],
+    _reserved35: [u8; 8usize],
     #[doc = "0x2a0 - USB End of Transfer Interrupt Status"]
     pub eotintst: EOTINTST,
     #[doc = "0x2a4 - USB End of Transfer Interrupt Clear"]
@@ -95,9 +94,9 @@ pub struct RegisterBlock {
     pub syserrintclr: SYSERRINTCLR,
     #[doc = "0x2c0 - USB System Error Interrupt Set"]
     pub syserrintset: SYSERRINTSET,
-    _reserved6: [u8; 60usize],
-    #[doc = "0x300 - I2C Receive"]
-    pub i2c_rx: I2C_RX,
+    _reserved44: [u8; 60usize],
+    #[doc = "I2C Transmit I2C Receive"]
+    pub i2c: I2cUnion,
     #[doc = "0x304 - I2C Status"]
     pub i2c_sts: I2C_STS,
     #[doc = "0x308 - I2C Control"]
@@ -106,9 +105,33 @@ pub struct RegisterBlock {
     pub i2c_clkhi: I2C_CLKHI,
     #[doc = "0x310 - I2C Clock Low"]
     pub i2c_clklo: I2C_CLKLO,
-    _reserved7: [u8; 3296usize],
+    _reserved49: [u8; 3296usize],
+    #[doc = "OTG clock controller USB Clock Control"]
+    pub otgclkctrl: OtgclkctrlUnion,
+    #[doc = "OTG clock status USB Clock Status"]
+    pub otgclkst: OtgclkstUnion,
+}
+#[doc = "I2C Transmit I2C Receive"]
+#[repr(C)]
+pub union I2cUnion {
+    #[doc = "0x300 - I2C Transmit"]
+    pub i2c_wo: I2C_WO,
+    #[doc = "0x300 - I2C Receive"]
+    pub i2c_rx: I2C_RX,
+}
+#[doc = "OTG clock controller USB Clock Control"]
+#[repr(C)]
+pub union OtgclkctrlUnion {
+    #[doc = "0xff4 - OTG clock controller"]
+    pub otgclkctrl: OTGCLKCTRL,
     #[doc = "0xff4 - USB Clock Control"]
     pub usbclkctrl: USBCLKCTRL,
+}
+#[doc = "OTG clock status USB Clock Status"]
+#[repr(C)]
+pub union OtgclkstUnion {
+    #[doc = "0xff8 - OTG clock status"]
+    pub otgclkst: OTGCLKST,
     #[doc = "0xff8 - USB Clock Status"]
     pub usbclkst: USBCLKST,
 }

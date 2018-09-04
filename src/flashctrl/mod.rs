@@ -1,12 +1,11 @@
 #[doc = r" Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    _reserved0: [u8; 32usize],
     #[doc = "0x20 - Signature start address register"]
     pub fmsstart: FMSSTART,
     #[doc = "0x24 - Signature stop-address register"]
     pub fmsstop: FMSSTOP,
-    _reserved1: [u8; 4usize],
+    _reserved2: [u8; 4usize],
     #[doc = "0x2c - 128-bit signature Word 0"]
     pub fmsw0: FMSW0,
     #[doc = "0x30 - 128-bit signature Word 1"]
@@ -15,7 +14,7 @@ pub struct RegisterBlock {
     pub fmsw2: FMSW2,
     #[doc = "0x38 - 128-bit signature Word 3"]
     pub fmsw3: FMSW3,
-    _reserved2: [u8; 68usize],
+    _reserved6: [u8; 68usize],
     #[doc = "0x80 - EEPROM command register"]
     pub eecmd: EECMD,
     #[doc = "0x84 - EEPROM address register"]
@@ -30,7 +29,7 @@ pub struct RegisterBlock {
     pub eeclkdiv: EECLKDIV,
     #[doc = "0x98 - EEPROM power-down register"]
     pub eepwrdwn: EEPWRDWN,
-    _reserved3: [u8; 3900usize],
+    _reserved13: [u8; 3900usize],
     #[doc = "0xfd8 - EEPROM interrupt enable clear"]
     pub enclr: ENCLR,
     #[doc = "0xfdc - EEPROM interrupt enable set"]

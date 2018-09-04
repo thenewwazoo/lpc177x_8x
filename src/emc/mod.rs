@@ -7,14 +7,14 @@ pub struct RegisterBlock {
     pub status: STATUS,
     #[doc = "0x08 - Configures operation of the memory controller"]
     pub emc_config: EMC_CONFIG,
-    _reserved0: [u8; 20usize],
+    _reserved3: [u8; 20usize],
     #[doc = "0x20 - Controls dynamic memory operation."]
     pub dynamiccontrol: DYNAMICCONTROL,
     #[doc = "0x24 - Configures dynamic memory refresh."]
     pub dynamicrefresh: DYNAMICREFRESH,
     #[doc = "0x28 - Configures dynamic memory read strategy."]
     pub dynamicreadconfig: DYNAMICREADCONFIG,
-    _reserved1: [u8; 4usize],
+    _reserved6: [u8; 4usize],
     #[doc = "0x30 - Precharge command period."]
     pub dynamicrp: DYNAMICRP,
     #[doc = "0x34 - Active to precharge command period."]
@@ -37,30 +37,30 @@ pub struct RegisterBlock {
     pub dynamicrrd: DYNAMICRRD,
     #[doc = "0x58 - Time for load mode register to active command."]
     pub dynamicmrd: DYNAMICMRD,
-    _reserved2: [u8; 36usize],
+    _reserved17: [u8; 36usize],
     #[doc = "0x80 - Time for long static memory read and write transfers."]
     pub staticextendedwait: STATICEXTENDEDWAIT,
-    _reserved3: [u8; 124usize],
+    _reserved18: [u8; 124usize],
     #[doc = "0x100 - Configuration information for EMC_DYCS0."]
     pub dynamicconfig0: DYNAMICCONFIG,
     #[doc = "0x104 - RAS and CAS latencies for EMC_DYCS0."]
     pub dynamicrascas0: DYNAMICRASCAS,
-    _reserved4: [u8; 24usize],
+    _reserved20: [u8; 24usize],
     #[doc = "0x120 - Configuration information for EMC_DYCS0."]
     pub dynamicconfig1: DYNAMICCONFIG,
     #[doc = "0x124 - RAS and CAS latencies for EMC_DYCS0."]
     pub dynamicrascas1: DYNAMICRASCAS,
-    _reserved5: [u8; 24usize],
+    _reserved22: [u8; 24usize],
     #[doc = "0x140 - Configuration information for EMC_DYCS0."]
     pub dynamicconfig2: DYNAMICCONFIG,
     #[doc = "0x144 - RAS and CAS latencies for EMC_DYCS0."]
     pub dynamicrascas2: DYNAMICRASCAS,
-    _reserved6: [u8; 24usize],
+    _reserved24: [u8; 24usize],
     #[doc = "0x160 - Configuration information for EMC_DYCS0."]
     pub dynamicconfig3: DYNAMICCONFIG,
     #[doc = "0x164 - RAS and CAS latencies for EMC_DYCS0."]
     pub dynamicrascas3: DYNAMICRASCAS,
-    _reserved7: [u8; 152usize],
+    _reserved26: [u8; 152usize],
     #[doc = "0x200 - Configuration for EMC_CS0."]
     pub staticconfig0: STATICCONFIG,
     #[doc = "0x204 - Delay from EMC_CS0 to write enable."]
@@ -75,7 +75,7 @@ pub struct RegisterBlock {
     pub staticwaitwr0: STATICWAITWR,
     #[doc = "0x218 - Number of bus turnaround cycles EMC_CS0."]
     pub staticwaitturn0: STATICWAITTURN,
-    _reserved8: [u8; 4usize],
+    _reserved33: [u8; 4usize],
     #[doc = "0x220 - Configuration for EMC_CS0."]
     pub staticconfig1: STATICCONFIG,
     #[doc = "0x224 - Delay from EMC_CS0 to write enable."]
@@ -90,7 +90,7 @@ pub struct RegisterBlock {
     pub staticwaitwr1: STATICWAITWR,
     #[doc = "0x238 - Number of bus turnaround cycles EMC_CS0."]
     pub staticwaitturn1: STATICWAITTURN,
-    _reserved9: [u8; 4usize],
+    _reserved40: [u8; 4usize],
     #[doc = "0x240 - Configuration for EMC_CS0."]
     pub staticconfig2: STATICCONFIG,
     #[doc = "0x244 - Delay from EMC_CS0 to write enable."]
@@ -105,7 +105,7 @@ pub struct RegisterBlock {
     pub staticwaitwr2: STATICWAITWR,
     #[doc = "0x258 - Number of bus turnaround cycles EMC_CS0."]
     pub staticwaitturn2: STATICWAITTURN,
-    _reserved10: [u8; 4usize],
+    _reserved47: [u8; 4usize],
     #[doc = "0x260 - Configuration for EMC_CS0."]
     pub staticconfig3: STATICCONFIG,
     #[doc = "0x264 - Delay from EMC_CS0 to write enable."]

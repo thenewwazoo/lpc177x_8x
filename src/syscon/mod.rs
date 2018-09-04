@@ -3,7 +3,7 @@
 pub struct RegisterBlock {
     #[doc = "0x00 - Flash Accelerator Configuration Register. Controls flash access timing."]
     pub flashcfg: FLASHCFG,
-    _reserved0: [u8; 124usize],
+    _reserved1: [u8; 124usize],
     #[doc = "0x80 - PLL0 Control register"]
     pub pll0con: PLLCON,
     #[doc = "0x84 - PLL0 Configuration register"]
@@ -12,7 +12,7 @@ pub struct RegisterBlock {
     pub pll0stat: PLLSTAT,
     #[doc = "0x8c - PLL0 Feed register"]
     pub pll0feed: PLLFEED,
-    _reserved1: [u8; 16usize],
+    _reserved5: [u8; 16usize],
     #[doc = "0xa0 - PLL0 Control register"]
     pub pll1con: PLLCON,
     #[doc = "0xa4 - PLL0 Configuration register"]
@@ -21,12 +21,12 @@ pub struct RegisterBlock {
     pub pll1stat: PLLSTAT,
     #[doc = "0xac - PLL0 Feed register"]
     pub pll1feed: PLLFEED,
-    _reserved2: [u8; 16usize],
+    _reserved9: [u8; 16usize],
     #[doc = "0xc0 - Power Control register"]
     pub pcon: PCON,
     #[doc = "0xc4 - Power Control for Peripherals"]
     pub pconp: PCONP,
-    _reserved3: [u8; 56usize],
+    _reserved11: [u8; 56usize],
     #[doc = "0x100 - External Memory Controller Clock Selection register"]
     pub emcclksel: EMCCLKSEL,
     #[doc = "0x104 - CPU Clock Selection register"]
@@ -39,34 +39,34 @@ pub struct RegisterBlock {
     pub cansleepclr: CANSLEEPCLR,
     #[doc = "0x114 - Allows reading the wake-up state of the CAN channels."]
     pub canwakeflags: CANWAKEFLAGS,
-    _reserved4: [u8; 40usize],
+    _reserved17: [u8; 40usize],
     #[doc = "0x140 - External Interrupt Flag Register"]
     pub extint: EXTINT,
-    _reserved5: [u8; 4usize],
+    _reserved18: [u8; 4usize],
     #[doc = "0x148 - External Interrupt Mode register"]
     pub extmode: EXTMODE,
     #[doc = "0x14c - External Interrupt Polarity Register"]
     pub extpolar: EXTPOLAR,
-    _reserved6: [u8; 48usize],
+    _reserved20: [u8; 48usize],
     #[doc = "0x180 - Reset Source Identification Register"]
     pub rsid: RSID,
-    _reserved7: [u8; 4usize],
+    _reserved21: [u8; 4usize],
     #[doc = "0x188 - Matrix arbitration register"]
     pub matrixarb: MATRIXARB,
-    _reserved8: [u8; 20usize],
+    _reserved22: [u8; 20usize],
     #[doc = "0x1a0 - System Control and Status"]
     pub scs: SCS,
-    _reserved9: [u8; 4usize],
+    _reserved23: [u8; 4usize],
     #[doc = "0x1a8 - Peripheral Clock Selection register"]
     pub pclksel: PCLKSEL,
-    _reserved10: [u8; 4usize],
+    _reserved24: [u8; 4usize],
     #[doc = "0x1b0 - Power boost register"]
     pub pboost: PBOOST,
     #[doc = "0x1b4 - SPIFI Clock Selection register"]
     pub spificlksel: SPIFICLKSEL,
     #[doc = "0x1b8 - LCD Clock configuration register"]
     pub lcd_cfg: LCD_CFG,
-    _reserved11: [u8; 4usize],
+    _reserved27: [u8; 4usize],
     #[doc = "0x1c0 - USB Interrupt Status"]
     pub usbintst: USBINTST,
     #[doc = "0x1c4 - Selects between alternative requests on DMA channels 0 through 7 and 10 through 15"]
@@ -77,7 +77,7 @@ pub struct RegisterBlock {
     pub rstcon0: RSTCON0,
     #[doc = "0x1d0 - Individual peripheral reset control bits"]
     pub rstcon1: RSTCON1,
-    _reserved12: [u8; 8usize],
+    _reserved32: [u8; 8usize],
     #[doc = "0x1dc - Values for the 4 programmable delays associated with SDRAM operation."]
     pub emcdlyctl: EMCDLYCTL,
     #[doc = "0x1e0 - Controls the calibration counter for programmable delays and returns the result value."]
