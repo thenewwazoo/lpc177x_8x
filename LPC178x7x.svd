@@ -13607,7 +13607,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>ABEOIE</name>
+                            <name>ABEOINTEN</name>
                             <description>Enables the end of auto-baud interrupt.</description>
                             <bitRange>[8:8]</bitRange>
                             <enumeratedValues>
@@ -13625,7 +13625,7 @@
                             </enumeratedValues>
                         </field>
                         <field>
-                            <name>ABTOIE</name>
+                            <name>ABTOINTEN</name>
                             <description>Enables the auto-baud time-out interrupt.</description>
                             <bitRange>[9:9]</bitRange>
                             <enumeratedValues>
@@ -48842,7 +48842,7 @@
                                     <value>0</value>
                                 </enumeratedValue>
                                 <enumeratedValue>
-                                    <name>NOT_EMPTY</name>
+                                    <name>NOTEMPTY</name>
                                     <description>The UARTn receiver FIFO is not empty.</description>
                                     <value>1</value>
                                 </enumeratedValue>
@@ -48968,7 +48968,7 @@
                                     <value>0</value>
                                 </enumeratedValue>
                                 <enumeratedValue>
-                                    <name>ERR</name>
+                                    <name>ERRORS</name>
                                     <description>UARTn RBR contains at least one UARTn RX error.</description>
                                     <value>1</value>
                                 </enumeratedValue>

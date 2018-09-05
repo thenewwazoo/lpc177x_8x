@@ -17,7 +17,7 @@ pub enum RDRR {
     #[doc = "The UARTn receiver FIFO is empty."]
     EMPTY,
     #[doc = "The UARTn receiver FIFO is not empty."]
-    NOT_EMPTY,
+    NOTEMPTY,
 }
 impl RDRR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
@@ -35,7 +35,7 @@ impl RDRR {
     pub fn bit(&self) -> bool {
         match *self {
             RDRR::EMPTY => false,
-            RDRR::NOT_EMPTY => true,
+            RDRR::NOTEMPTY => true,
         }
     }
     #[allow(missing_docs)]
@@ -44,7 +44,7 @@ impl RDRR {
     pub fn _from(value: bool) -> RDRR {
         match value {
             false => RDRR::EMPTY,
-            true => RDRR::NOT_EMPTY,
+            true => RDRR::NOTEMPTY,
         }
     }
     #[doc = "Checks if the value of the field is `EMPTY`"]
@@ -52,10 +52,10 @@ impl RDRR {
     pub fn is_empty(&self) -> bool {
         *self == RDRR::EMPTY
     }
-    #[doc = "Checks if the value of the field is `NOT_EMPTY`"]
+    #[doc = "Checks if the value of the field is `NOTEMPTY`"]
     #[inline]
-    pub fn is_not_empty(&self) -> bool {
-        *self == RDRR::NOT_EMPTY
+    pub fn is_notempty(&self) -> bool {
+        *self == RDRR::NOTEMPTY
     }
 }
 #[doc = "Possible values of the field `OE`"]
@@ -346,7 +346,7 @@ pub enum RXFER {
     #[doc = "UnRBR contains no UARTn RX errors or UnFCR[0]=0."]
     NO_ERR,
     #[doc = "UARTn RBR contains at least one UARTn RX error."]
-    ERR,
+    ERRORS,
 }
 impl RXFER {
     #[doc = r" Returns `true` if the bit is clear (0)"]
@@ -364,7 +364,7 @@ impl RXFER {
     pub fn bit(&self) -> bool {
         match *self {
             RXFER::NO_ERR => false,
-            RXFER::ERR => true,
+            RXFER::ERRORS => true,
         }
     }
     #[allow(missing_docs)]
@@ -373,7 +373,7 @@ impl RXFER {
     pub fn _from(value: bool) -> RXFER {
         match value {
             false => RXFER::NO_ERR,
-            true => RXFER::ERR,
+            true => RXFER::ERRORS,
         }
     }
     #[doc = "Checks if the value of the field is `NO_ERR`"]
@@ -381,10 +381,10 @@ impl RXFER {
     pub fn is_no_err(&self) -> bool {
         *self == RXFER::NO_ERR
     }
-    #[doc = "Checks if the value of the field is `ERR`"]
+    #[doc = "Checks if the value of the field is `ERRORS`"]
     #[inline]
-    pub fn is_err(&self) -> bool {
-        *self == RXFER::ERR
+    pub fn is_errors(&self) -> bool {
+        *self == RXFER::ERRORS
     }
 }
 impl R {

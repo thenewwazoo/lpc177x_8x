@@ -277,15 +277,15 @@ impl CTSIER {
         *self == CTSIER::ENABLE
     }
 }
-#[doc = "Possible values of the field `ABEOIE`"]
+#[doc = "Possible values of the field `ABEOINTEN`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ABEOIER {
+pub enum ABEOINTENR {
     #[doc = "Disable end of auto-baud Interrupt."]
     DISABLE,
     #[doc = "Enable end of auto-baud Interrupt."]
     ENABLE,
 }
-impl ABEOIER {
+impl ABEOINTENR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -300,39 +300,39 @@ impl ABEOIER {
     #[inline]
     pub fn bit(&self) -> bool {
         match *self {
-            ABEOIER::DISABLE => false,
-            ABEOIER::ENABLE => true,
+            ABEOINTENR::DISABLE => false,
+            ABEOINTENR::ENABLE => true,
         }
     }
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
-    pub fn _from(value: bool) -> ABEOIER {
+    pub fn _from(value: bool) -> ABEOINTENR {
         match value {
-            false => ABEOIER::DISABLE,
-            true => ABEOIER::ENABLE,
+            false => ABEOINTENR::DISABLE,
+            true => ABEOINTENR::ENABLE,
         }
     }
     #[doc = "Checks if the value of the field is `DISABLE`"]
     #[inline]
     pub fn is_disable(&self) -> bool {
-        *self == ABEOIER::DISABLE
+        *self == ABEOINTENR::DISABLE
     }
     #[doc = "Checks if the value of the field is `ENABLE`"]
     #[inline]
     pub fn is_enable(&self) -> bool {
-        *self == ABEOIER::ENABLE
+        *self == ABEOINTENR::ENABLE
     }
 }
-#[doc = "Possible values of the field `ABTOIE`"]
+#[doc = "Possible values of the field `ABTOINTEN`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ABTOIER {
+pub enum ABTOINTENR {
     #[doc = "Disable auto-baud time-out Interrupt."]
     DISABLE,
     #[doc = "Enable auto-baud time-out Interrupt."]
     ENABLE,
 }
-impl ABTOIER {
+impl ABTOINTENR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -347,28 +347,28 @@ impl ABTOIER {
     #[inline]
     pub fn bit(&self) -> bool {
         match *self {
-            ABTOIER::DISABLE => false,
-            ABTOIER::ENABLE => true,
+            ABTOINTENR::DISABLE => false,
+            ABTOINTENR::ENABLE => true,
         }
     }
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
-    pub fn _from(value: bool) -> ABTOIER {
+    pub fn _from(value: bool) -> ABTOINTENR {
         match value {
-            false => ABTOIER::DISABLE,
-            true => ABTOIER::ENABLE,
+            false => ABTOINTENR::DISABLE,
+            true => ABTOINTENR::ENABLE,
         }
     }
     #[doc = "Checks if the value of the field is `DISABLE`"]
     #[inline]
     pub fn is_disable(&self) -> bool {
-        *self == ABTOIER::DISABLE
+        *self == ABTOINTENR::DISABLE
     }
     #[doc = "Checks if the value of the field is `ENABLE`"]
     #[inline]
     pub fn is_enable(&self) -> bool {
-        *self == ABTOIER::ENABLE
+        *self == ABTOINTENR::ENABLE
     }
 }
 #[doc = "Values that can be written to the field `RBRIE`"]
@@ -661,32 +661,32 @@ impl<'a> _CTSIEW<'a> {
         self.w
     }
 }
-#[doc = "Values that can be written to the field `ABEOIE`"]
-pub enum ABEOIEW {
+#[doc = "Values that can be written to the field `ABEOINTEN`"]
+pub enum ABEOINTENW {
     #[doc = "Disable end of auto-baud Interrupt."]
     DISABLE,
     #[doc = "Enable end of auto-baud Interrupt."]
     ENABLE,
 }
-impl ABEOIEW {
+impl ABEOINTENW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
     pub fn _bits(&self) -> bool {
         match *self {
-            ABEOIEW::DISABLE => false,
-            ABEOIEW::ENABLE => true,
+            ABEOINTENW::DISABLE => false,
+            ABEOINTENW::ENABLE => true,
         }
     }
 }
 #[doc = r" Proxy"]
-pub struct _ABEOIEW<'a> {
+pub struct _ABEOINTENW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ABEOIEW<'a> {
+impl<'a> _ABEOINTENW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
-    pub fn variant(self, variant: ABEOIEW) -> &'a mut W {
+    pub fn variant(self, variant: ABEOINTENW) -> &'a mut W {
         {
             self.bit(variant._bits())
         }
@@ -694,12 +694,12 @@ impl<'a> _ABEOIEW<'a> {
     #[doc = "Disable end of auto-baud Interrupt."]
     #[inline]
     pub fn disable(self) -> &'a mut W {
-        self.variant(ABEOIEW::DISABLE)
+        self.variant(ABEOINTENW::DISABLE)
     }
     #[doc = "Enable end of auto-baud Interrupt."]
     #[inline]
     pub fn enable(self) -> &'a mut W {
-        self.variant(ABEOIEW::ENABLE)
+        self.variant(ABEOINTENW::ENABLE)
     }
     #[doc = r" Sets the field bit"]
     pub fn set_bit(self) -> &'a mut W {
@@ -719,32 +719,32 @@ impl<'a> _ABEOIEW<'a> {
         self.w
     }
 }
-#[doc = "Values that can be written to the field `ABTOIE`"]
-pub enum ABTOIEW {
+#[doc = "Values that can be written to the field `ABTOINTEN`"]
+pub enum ABTOINTENW {
     #[doc = "Disable auto-baud time-out Interrupt."]
     DISABLE,
     #[doc = "Enable auto-baud time-out Interrupt."]
     ENABLE,
 }
-impl ABTOIEW {
+impl ABTOINTENW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
     pub fn _bits(&self) -> bool {
         match *self {
-            ABTOIEW::DISABLE => false,
-            ABTOIEW::ENABLE => true,
+            ABTOINTENW::DISABLE => false,
+            ABTOINTENW::ENABLE => true,
         }
     }
 }
 #[doc = r" Proxy"]
-pub struct _ABTOIEW<'a> {
+pub struct _ABTOINTENW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ABTOIEW<'a> {
+impl<'a> _ABTOINTENW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
-    pub fn variant(self, variant: ABTOIEW) -> &'a mut W {
+    pub fn variant(self, variant: ABTOINTENW) -> &'a mut W {
         {
             self.bit(variant._bits())
         }
@@ -752,12 +752,12 @@ impl<'a> _ABTOIEW<'a> {
     #[doc = "Disable auto-baud time-out Interrupt."]
     #[inline]
     pub fn disable(self) -> &'a mut W {
-        self.variant(ABTOIEW::DISABLE)
+        self.variant(ABTOINTENW::DISABLE)
     }
     #[doc = "Enable auto-baud time-out Interrupt."]
     #[inline]
     pub fn enable(self) -> &'a mut W {
-        self.variant(ABTOIEW::ENABLE)
+        self.variant(ABTOINTENW::ENABLE)
     }
     #[doc = r" Sets the field bit"]
     pub fn set_bit(self) -> &'a mut W {
@@ -830,8 +830,8 @@ impl R {
     }
     #[doc = "Bit 8 - Enables the end of auto-baud interrupt."]
     #[inline]
-    pub fn abeoie(&self) -> ABEOIER {
-        ABEOIER::_from({
+    pub fn abeointen(&self) -> ABEOINTENR {
+        ABEOINTENR::_from({
             const MASK: bool = true;
             const OFFSET: u8 = 8;
             ((self.bits >> OFFSET) & MASK as u32) != 0
@@ -839,8 +839,8 @@ impl R {
     }
     #[doc = "Bit 9 - Enables the auto-baud time-out interrupt."]
     #[inline]
-    pub fn abtoie(&self) -> ABTOIER {
-        ABTOIER::_from({
+    pub fn abtointen(&self) -> ABTOINTENR {
+        ABTOINTENR::_from({
             const MASK: bool = true;
             const OFFSET: u8 = 9;
             ((self.bits >> OFFSET) & MASK as u32) != 0
@@ -886,12 +886,12 @@ impl W {
     }
     #[doc = "Bit 8 - Enables the end of auto-baud interrupt."]
     #[inline]
-    pub fn abeoie(&mut self) -> _ABEOIEW {
-        _ABEOIEW { w: self }
+    pub fn abeointen(&mut self) -> _ABEOINTENW {
+        _ABEOINTENW { w: self }
     }
     #[doc = "Bit 9 - Enables the auto-baud time-out interrupt."]
     #[inline]
-    pub fn abtoie(&mut self) -> _ABTOIEW {
-        _ABTOIEW { w: self }
+    pub fn abtointen(&mut self) -> _ABTOINTENW {
+        _ABTOINTENW { w: self }
     }
 }
