@@ -51,7 +51,8 @@ pub struct CON {
     register: ::vcell::VolatileCell<u32>,
 }
 #[doc = "PWM Control read address"]
-pub mod con;
+pub mod con_;
+pub use self::con_ as con;
 #[doc = "PWM Control set address"]
 pub struct CON_SET {
     register: ::vcell::VolatileCell<u32>,

@@ -6,7 +6,7 @@ license = "MIT OR Apache-2.0"
 name = "lpc177x_8x"
 readme = "README.md"
 repository = "https://github.com/thenewwazoo/lpc177x_8x"
-version = "0.13.3"
+version = "0.13.4"
 
 [dependencies]
 bare-metal = "0.2.3"

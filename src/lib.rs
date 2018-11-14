@@ -1038,7 +1038,6 @@ impl Deref for SYSCON {
 }
 #[doc = "System and clock control"]
 pub mod syscon;
-#[allow(private_no_mangle_statics)]
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r" All the peripherals"]
