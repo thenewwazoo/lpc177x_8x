@@ -62,7 +62,8 @@ pub struct CON {
     register: ::vcell::VolatileCell<u32>,
 }
 #[doc = "Control register"]
-pub mod con;
+pub mod con_;
+pub use self::con_ as con;
 #[doc = "Configuration register"]
 pub struct CONF {
     register: ::vcell::VolatileCell<u32>,
